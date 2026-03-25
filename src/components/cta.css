@@ -1,0 +1,39 @@
+/* CTA Section */
+body {
+  text-align: center;
+}
+
+.speakers-cta-section {
+  background: #fdbb2d;
+  padding: 20px 20px;
+  color: #333;
+}
+
+.speakers-cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.speakers-cta-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.speakers-cta-button {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #fc760098;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.speakers-cta-button:hover {
+  background-color: #ff9900;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(253, 187, 45, 0.5);
+}

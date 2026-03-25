@@ -1,0 +1,218 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.committee-pagee {
+  background-color: #fafafa;
+}
+
+/* Hero Section */
+.hero-sectionn {
+  position: relative;
+  height: 300px;
+  background: url("https://www.shutterstock.com/image-vector/digital-twin-business-industrial-process-600nw-2496025691.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content-overlay h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Slider Section */
+.slider-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #1a2a6c;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #fdbb2d;
+}
+
+.swiper-showcase {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Swiper Slide Cards */
+.swiper-slide-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.swiper-slide-item.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Committee Cards */
+.card-item {
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  padding: 30px 40px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease, transform 0.3s ease;
+  width: 400px;
+  max-width: 100%;
+  margin: 10px 0 10px 0;
+}
+
+.card-item:hover {
+  box-shadow: 0 10px 30px rgba(253, 187, 45, 0.3);
+  border: 2px solid #fdbb2d;
+}
+
+.card-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 3px solid #fdbb2d;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  color: #b21f1f;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.card-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a2a6c;
+  margin-bottom: 5px;
+}
+
+/* Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #d3632d;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #fdbb2d;
+}
+
+/* Responsive Designs */
+@media (max-width: 1024px) {
+  .card-item {
+    padding: 15px;
+  }
+
+  .card-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-name,
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-area {
+    height: 200px;
+  }
+
+  .hero-content-overlay h1 {
+    font-size: 1.8rem;
+    padding: 0 15px;
+  }
+
+  .swiper-showcase {
+    width: 100%;
+  }
+
+  .card-item {
+    padding: 12px;
+  }
+
+  .card-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .card-name {
+    font-size: 0.95rem;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-area {
+    height: 180px;
+  }
+
+  .hero-content-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .swiper-showcase {
+    width: 100%;
+  }
+
+  .card-item {
+    padding: 10px;
+  }
+
+  .card-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-name {
+    font-size: 0.9rem;
+  }
+
+  .card-title {
+    font-size: 0.85rem;
+  }
+}

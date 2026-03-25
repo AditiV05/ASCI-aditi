@@ -1,0 +1,164 @@
+footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-contact h3,
+.footer-address h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fdbb2d;
+}
+
+.footer-contact p,
+.footer-address p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.footer-contact a,
+.footer-bottom a {
+  color: #fdbb2d;
+  text-decoration: none;
+}
+
+.footer-contact a:hover,
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo img {
+  max-width: 300px;
+  height: auto;
+}
+
+.footer-bottom {
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  width: 100%;
+}
+
+/* Default (Desktop View) */
+.footer-description-mobile {
+  display: none; /* Hide the mobile text by default */
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .footer-description {
+    display: none; /* Hide the desktop text */
+  }
+
+  .footer-description-mobile {
+    display: block; /* Show mobile-specific text */
+  }
+}
+
+a .kalvium {
+  color: #fff;
+}
+
+.desktop-content {
+  display: inline;
+}
+
+.mobile-content {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .desktop-content {
+    display: none;
+  }
+
+  .mobile-content {
+    display: inline;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 30px 10px;
+  }
+
+  .footer-contact h3,
+  .footer-address h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-contact p,
+  .footer-address p {
+    font-size: 0.9rem;
+  }
+
+  .footer-logo img {
+    max-width: 250px;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-contact h3,
+  .footer-address h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-contact p,
+  .footer-address p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}

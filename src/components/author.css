@@ -1,0 +1,294 @@
+.call-for-papers-page {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.cfp-hero-section {
+  position: relative;
+  height: 300px;
+  background: url("https://www.deepnetsoft.com/images/about-us/dg4.jpg");
+  background-position: center 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cfp-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.cfp-hero-overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.cfp-hero-overlay p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1.2s ease-in-out;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Section Container */
+.cfp-about-section,
+.cfp-tracks-section,
+.cfp-guidelines-section,
+.cfp-registration-section,
+.cfp-included-section {
+  padding: 10px 15px;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.cfp-about-section h2,
+.cfp-tracks-section h2,
+.cfp-guidelines-section h2,
+.cfp-registration-section h2,
+.cfp-included-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #1a2a6c;
+}
+
+.cfp-about-section p,
+.cfp-guidelines-section p,
+.cfp-registration-section p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Tracks Grid */
+.cfp-tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cfp-track-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cfp-track-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cfp-track-card h3 {
+  font-size: 1.2rem;
+  color: #fdbb2d;
+  margin-bottom: 10px;
+}
+
+.cfp-track-card h4 {
+  font-size: 1.5rem;
+  color: #1a2a6c;
+  margin-bottom: 10px;
+}
+
+.cfp-track-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.cfp-track-card ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Submission Guidelines */
+.cfp-guidelines-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cfp-guidelines-section ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.cfp-guidelines-section ul li::before {
+  content: "✔";
+  color: #fdbb2d;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Registration Table */
+.cfp-registration-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.cfp-registration-table th,
+.cfp-registration-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.cfp-registration-table th {
+  background: #1a2a6c;
+  color: white;
+  font-weight: bold;
+}
+
+.cfp-registration-table td {
+  color: #555;
+}
+
+.cfp-registration-table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* What's Included */
+.cfp-included-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cfp-included-section ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.cfp-included-section ul li::before {
+  content: "✔";
+  color: #fdbb2d;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* General Adjustments */
+.cfp-about-section p,
+.cfp-guidelines-section p,
+.cfp-registration-section p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 1024px) {
+  .cfp-about-section,
+  .cfp-tracks-section,
+  .cfp-guidelines-section,
+  .cfp-registration-section,
+  .cfp-included-section {
+    padding: 10px;
+  }
+
+  .cfp-tracks-grid {
+    gap: 15px;
+  }
+
+  .cfp-track-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .cfp-track-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .cfp-registration-table th,
+  .cfp-registration-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cfp-hero-overlay {
+    padding: 20px;
+  }
+
+  .cfp-hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .cfp-hero-overlay p {
+    font-size: 1rem;
+  }
+
+  .cfp-tracks-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .cfp-track-card {
+    padding: 15px;
+  }
+
+  .cfp-track-card h3 {
+    font-size: 1rem;
+  }
+
+  .cfp-track-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .cfp-registration-table {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cfp-hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .cfp-hero-overlay p {
+    font-size: 0.85rem;
+  }
+
+  .cfp-registration-table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .cfp-registration-table table {
+    width: 100%;
+    display: block;
+    overflow-x: scroll;
+  }
+
+  .cfp-registration-table th,
+  .cfp-registration-table td {
+    font-size: 0.75rem;
+  }
+
+  .cfp-included-section ul li {
+    font-size: 0.85rem;
+  }
+}
