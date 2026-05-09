@@ -35,21 +35,20 @@
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1101; /* Ensure the toggle button stays above the menu */
+  z-index: 1101; 
 }
 
 /* Container for icon positioning */
 .icon-container {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Default: hamburger icon on the right */
-  width: 100%; /* Ensure full width to move icons around */
-  transition: justify-content 0.3s ease; /* Smooth transition */
+  justify-content: flex-end; 
+  width: 100%; 
+  transition: justify-content 0.3s ease; 
 }
 
-/* Move the cross icon to the left when the menu is open */
 .icon-container.move-left {
-  justify-content: flex-start; /* Cross icon on the left */
+  justify-content: flex-start; 
 }
 
 /* Icon styles (unchanged) */
