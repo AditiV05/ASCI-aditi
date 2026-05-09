@@ -9,8 +9,6 @@
 
 > Official website for the **ASCI 2025 International Conference** — a multi-page React application designed, built, and deployed end-to-end as a solo project. Live in production and used by real attendees, speakers, and organizers.
 
-![ASCI Hero](./screenshots/hero.png)
-
 ---
 
 ## 🌐 Live Site
@@ -78,18 +76,6 @@ This was a **solo project**. I owned every layer end-to-end:
 - Animation work using AOS and Swiper integrations
 - Responsive design across 3 breakpoints
 - Deployment, custom domain configuration, and ongoing maintenance
-
----
-
-## 📸 Screenshots
-
-| Hero | Important Dates |
-|:----:|:---------------:|
-| ![Hero](./screenshots/hero.png) | ![Dates](./screenshots/dates.png) |
-
-| Speakers | Committees |
-|:--------:|:----------:|
-| ![Speakers](./screenshots/speakers.png) | ![Committees](./screenshots/committees.png) |
 
 ---
 
